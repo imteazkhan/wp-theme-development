@@ -1,0 +1,178 @@
+/* 
+ Theme Name: IsDB Round 64
+ Theme URI: https://coders64.xyz/wptheme
+Author: The Professional Round64 WordPress team
+Author URI: https://coders64.xyz/
+ Description: Theme for our Round 64 class. Based on nothing
+ Version: 1.0
+ License: GNU General Public License v2 or later
+ License URI: http://www.gnu.org/licenses/gpl-2.0.html 
+ Tags: black, green, white, light, dark, two-columns, three-columns,
+ left-sidebar, right-sidebar, fixed-layout, responsive-layout,
+ custom-background, custom-header, custom-menu, editor-style,
+ featured-images, flexible-header, full-width-template, microformats,
+ post-formats, rtl-language-support, sticky-post, theme-options, 
+ translation-ready, accessibility-ready 
+ Text Domain: round64 
+ */
+#main .article-title.card-title { font-size: 1.5em; color: #7fff00 !important; font-weight: bold; background-color: blueviolet; }
+#main .article-author{ font-style: italic !important; }
+/* custom header */
+.custom-header { background-color: #7fff00 !important; text-align: center; }
+.custom-header img{ width: 100% !important; }
+/* General Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Navbar Styling */
+  .navbar {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+    border-radius: 8px;
+  }
+  
+  .navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #007bff;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-brand:hover {
+    color: #0056b3;
+  }
+  
+  .navbar-nav .nav-link {
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    color: #333;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+  }
+  
+  .navbar-toggler {
+    border: none;
+    outline: none;
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%280, 123, 255, 0.5%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+  
+  /* Carousel Styling */
+  .carousel {
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .carousel-inner img {
+    object-fit: cover;
+    height: 400px;
+    width: 100%;
+  }
+  
+  .carousel-caption {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    padding: 15px;
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 5%;
+    background: rgba(0, 0, 0, 0.3);
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    filter: brightness(0) invert(1);
+  }
+  
+  .carousel-indicators button {
+    background-color: #007bff;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+  }
+  
+  .carousel-indicators .active {
+    background-color: #0056b3;
+  }
+  
+  /* Hotnews Section */
+  .hotnews {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+  
+  .hotnews h2 {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-bottom: 15px;
+  }
+  
+  /* Header Image */
+  .custom-header {
+    margin-top: 20px;
+    position: relative;
+    text-align: center;
+  }
+  
+  .custom-header img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .custom-header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .carousel-inner img {
+      height: 250px;
+    }
+  
+    .navbar-nav .nav-link {
+      padding: 8px 10px;
+    }
+  
+    .hotnews {
+      padding: 15px;
+    }
+  
+    .custom-header img {
+      max-height: 200px;
+    }
+  }
